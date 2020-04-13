@@ -33,7 +33,6 @@ class UserController extends Controller
 	    // echo $getUserDetails;  die;
         // var_dump($getUserDetailsCount);
         // var_dump($getredeemdetailsCount);die();
-// echo "Secceed";exit();
         echo "kkk";exit();
 	    return view("samples/dashboard", compact('getUserDetailsCount','getredeemdetailsCount'));
   	}

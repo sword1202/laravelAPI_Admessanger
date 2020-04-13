@@ -31,7 +31,6 @@ class UserController extends Controller
 	    $getUserDetailsCount = User::all()->count();
 	    $getredeemdetailsCount = RedeemRequest::all()->where('status','=',1)->count();
 	    //echo $getUserDetails;  die;
-        
 	    return view("samples/dashboard", compact('getUserDetailsCount','getredeemdetailsCount'));
   	}
 

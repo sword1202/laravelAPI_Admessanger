@@ -21,7 +21,7 @@ Route::middleware('auth')->group(function() {
 	
 	Route::get('/', 'UserController@DashboardDetails');
 	Route::get('/userdetails', 'UserController@UserDetails');  
-	Route::get('/edit-user/{userid}', 'UserController@EditUserDetails');
+	Route::get('/edit-user/{userid}', 'UserController@EditUserDetails'); 
 	Route::post('update-user-details', 'UserController@UpdateUser');
 	Route::post('/delete-user', 'UserController@DeleteUser');
 	Route::get('/redeem-details','UserController@RedeemDetail');
